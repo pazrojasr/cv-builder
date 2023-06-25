@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+.container {
+  padding: 50px 30px;
+  text-align: center;
+  width: 100%;
+  gap: 40px;
+  font-family: 'Belanosima', sans-serif;
+  min-height: 85vh;
+}
+
+.heading {
+  margin: 0 auto;
+  max-width: 500px;
+  color: #333;
+  font-size: 3.1em;
+  font-weight: 600;
+  line-height: 4.1rem;
+  font-family: 'Belanosima', sans-serif;
+  letter-spacing: 1px;
+}
+
+.heading span {
+  background-clip: text;
+  -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+  color: transparent;
+  background-image: linear-gradient(to right, #1f9fd8, #6055d1);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heading span {
+  background-size: 200% auto;
+  animation: gradientAnimation 3s ease-in-out infinite;
+}
+
+.right {
+  width: 400px;
+}
